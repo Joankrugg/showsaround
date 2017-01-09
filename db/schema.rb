@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170109145545) do
+ActiveRecord::Schema.define(version: 20170109151118) do
+
+  create_table "availabilities", force: :cascade do |t|
+    t.date     "start_at"
+    t.date     "finish_at"
+    t.integer  "band_id"
+    t.date     "place_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "bands", force: :cascade do |t|
     t.string   "band_name"
@@ -33,6 +42,25 @@ ActiveRecord::Schema.define(version: 20170109145545) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "perf_makers", force: :cascade do |t|
+    t.string   "equipment"
+    t.string   "website"
+    t.string   "association"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "performances", force: :cascade do |t|
+    t.date     "perf_date"
+    t.integer  "band_id"
+    t.integer  "place_id"
+    t.integer  "perf_price"
+    t.string   "facebook_event"
+    t.integer  "perf_maker_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
   create_table "places", force: :cascade do |t|
     t.string   "place_name"
     t.string   "city"
@@ -46,6 +74,16 @@ ActiveRecord::Schema.define(version: 20170109145545) do
     t.integer  "genre_id"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "username"
+    t.string   "email"
+    t.string   "user_city"
+    t.boolean  "user_avatar"
+    t.integer  "perf_maker_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
