@@ -1,4 +1,4 @@
-class PerfMakerController < ApplicationController
+class BandsController < ApplicationController
   def index
   end
 

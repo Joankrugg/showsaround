@@ -1,4 +1,4 @@
-class PlaceController < ApplicationController
+class PerformancesController < ApplicationController
   def index
   end
 

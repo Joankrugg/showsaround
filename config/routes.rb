@@ -1,59 +1,59 @@
 Rails.application.routes.draw do
-  get 'performance/index'
+  get 'performances/index'
 
-  get 'performance/new'
+  get 'performances/new'
 
-  get 'performance/create'
+  get 'performances/create'
 
-  get 'performance/show'
+  get 'performances/show'
 
-  get 'performance/edit'
+  get 'performances/edit'
 
-  get 'performance/update'
+  get 'performances/update'
 
-  get 'performance/destroy'
+  get 'performances/destroy'
 
-  get 'perf_maker/index'
+  get 'perf_makers/index'
 
-  get 'perf_maker/new'
+  get 'perf_makers/new'
 
-  get 'perf_maker/create'
+  get 'perf_makers/create'
 
-  get 'perf_maker/show'
+  get 'perf_makers/show'
 
-  get 'perf_maker/edit'
+  get 'perf_makers/edit'
 
-  get 'perf_maker/update'
+  get 'perf_makers/update'
 
-  get 'perf_maker/destroy'
+  get 'perf_makers/destroy'
 
-  get 'place/index'
+  get 'places/index'
 
-  get 'place/new'
+  get 'places/new'
 
-  get 'place/create'
+  get 'places/create'
 
-  get 'place/show'
+  get 'places/show'
 
-  get 'place/edit'
+  get 'places/edit'
 
-  get 'place/update'
+  get 'places/update'
 
-  get 'place/destroy'
+  get 'places/destroy'
 
-  get 'band/index'
+  get 'bands/index'
 
-  get 'band/new'
+  get 'bands/new'
 
-  get 'band/create'
+  get 'bands/create'
 
-  get 'band/show'
+  get 'bands/show'
 
-  get 'band/edit'
+  get 'bands/edit'
 
-  get 'band/update'
+  get 'bands/update'
 
-  get 'band/destroy'
+  get 'bands/destroy'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
