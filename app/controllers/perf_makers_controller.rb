@@ -1,5 +1,6 @@
 class PerfMakersController < ApplicationController
   def index
+    @perf_makers = Perf_maker.all
   end
 
   def new

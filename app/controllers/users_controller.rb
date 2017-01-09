@@ -1,8 +1,4 @@
-class PlacesController < ApplicationController
-  def index
-    @places = Place.all
-  end
-
+class UsersController < ApplicationController
   def new
   end
 

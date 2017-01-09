@@ -1,59 +1,20 @@
 Rails.application.routes.draw do
-  get 'performances/index'
+  get 'users/new'
 
-  get 'performances/new'
+  get 'users/create'
 
-  get 'performances/create'
+  get 'users/show'
 
-  get 'performances/show'
+  get 'users/edit'
 
-  get 'performances/edit'
+  get 'users/update'
 
-  get 'performances/update'
+  get 'users/destroy'
 
-  get 'performances/destroy'
-
-  get 'perf_makers/index'
-
-  get 'perf_makers/new'
-
-  get 'perf_makers/create'
-
-  get 'perf_makers/show'
-
-  get 'perf_makers/edit'
-
-  get 'perf_makers/update'
-
-  get 'perf_makers/destroy'
-
-  get 'places/index'
-
-  get 'places/new'
-
-  get 'places/create'
-
-  get 'places/show'
-
-  get 'places/edit'
-
-  get 'places/update'
-
-  get 'places/destroy'
-
-  get 'bands/index'
-
-  get 'bands/new'
-
-  get 'bands/create'
-
-  get 'bands/show'
-
-  get 'bands/edit'
-
-  get 'bands/update'
-
-  get 'bands/destroy'
+  resources :performances
+  resources :perf_makers
+  resources :places
+  resources :bands
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
