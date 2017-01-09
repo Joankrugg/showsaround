@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170109144623) do
+ActiveRecord::Schema.define(version: 20170109145545) do
 
   create_table "bands", force: :cascade do |t|
     t.string   "band_name"
@@ -31,6 +31,21 @@ ActiveRecord::Schema.define(version: 20170109144623) do
   create_table "genres", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string   "place_name"
+    t.string   "city"
+    t.string   "place_address"
+    t.string   "type"
+    t.string   "place_facebook"
+    t.string   "payment"
+    t.integer  "user_id"
+    t.text     "place_description"
+    t.integer  "capacity"
+    t.integer  "genre_id"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end
