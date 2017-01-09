@@ -1,0 +1,2 @@
+class PerfMaker < ApplicationRecord
+end
