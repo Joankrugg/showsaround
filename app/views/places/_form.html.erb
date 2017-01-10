@@ -1,0 +1,21 @@
+<%= form_for(@place) do |f| %>
+  <%= f.label :place_name %>
+  <%= f.text_field :place_name %>
+  <%= f.label :place_address %>
+  <%= f.text_field :place_address %>
+  <%= f.label :place_facebook %>
+  <%= f.text_field :place_facebook %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+  <%= f.label :genre_id %>
+  <%= f.text_field :genre_id %>
+  <%= f.label :capacity %>
+  <%= f.text_field :capacity %>
+  <%= f.label :type %>
+  <%= f.text_field :type %>
+  <%= f.label :place_description %>
+  <%= f.text_field :place_description%>
+  <%= f.label :payment %>
+  <%= f.text_field :payment %>
+  <%= f.submit %>
+<% end %>

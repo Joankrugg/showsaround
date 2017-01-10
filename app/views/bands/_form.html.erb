@@ -1,0 +1,23 @@
+<%= form_for(@band) do |f| %>
+  <%= f.label :band_name %>
+  <%= f.text_field :band_name %>
+  <%= f.label :rehearsal_address %>
+  <%= f.text_field :rehearsal_address %>
+  <%= f.label :band_facebook %>
+  <%= f.text_field :band_facebook %>
+  <%= f.label :band_price %>
+  <%= f.text_field :band_price %>
+  <%= f.label :genre_id %>
+  <%= f.text_field :genre_id %>
+  <%= f.label :set_time %>
+  <%= f.text_field :set_time%>
+  <%= f.label :members_number %>
+  <%= f.text_field :members_number %>
+  <%= f.label :transport %>
+  <%= f.text_field :transport%>
+  <%= f.label :band_avatar%>
+  <%= f.text_field :band_avatar %>
+  <%= f.label :mersh %>
+  <%= f.text_field :mersh %>
+  <%= f.submit %>
+<% end %>

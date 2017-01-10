@@ -1,2 +1,4 @@
 <h1>Band#destroy</h1>
-<p>Find me in app/views/band/destroy.html.erb</p>
+<%= link_to "Delete", band_path(band),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
